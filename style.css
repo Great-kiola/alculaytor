@@ -154,14 +154,13 @@ input::-webkit-outer-spin-button {
 }
 
 :root{
-     
     --DarkBlue: #034078;
     --DisDarkBlue: #8DA9C4;
     --DisDBS: #0B2545;
     --ODarkBlue: #EEF4ED;
-    --btn-background: #13315C;
     --white: #fff;
     --black: #000;
+    --btn-background: #13315C;
     --btnBorder-bottom: #0B2545;
 }
 
@@ -181,6 +180,8 @@ input::-webkit-outer-spin-button {
     --ODarkBlue: #61D095;
     --DisDBS: #001F54;
     --DisDarkBlue: #E0BAD7;
+    --btn-background: #48BF84;
+    --btnBorder-bottom: #0B2545;
 }
 
 .container.yellowMode{
@@ -188,6 +189,8 @@ input::-webkit-outer-spin-button {
     --ODarkBlue: #EDFBC1;
     --DisDBS: #A2B99E;
     --DisDarkBlue: #D9D375;
+    --btn-background: #D9D375;
+    --btnBorder-bottom: #A2B99E; 
 }
 
 .container.purpleMode{
@@ -211,10 +214,15 @@ input::-webkit-outer-spin-button {
     --DisDarkBlue: #0072BB; 
 }
 
-.container.ghostMode{
+
+/* Ghost Mode */
+
+/* .container.ghostMode{
+    --btn-background: transparent;
+    --btnBorder-bottom: var(--black);
     --DarkBlue: transparent;
     border: 2px solid #000;
-    --ODarkBlue: #000;
+    --ODarkBlue: var(--black);
     --DisDBS: none;
     --DisDarkBlue: transparent;
 }
@@ -222,3 +230,7 @@ input::-webkit-outer-spin-button {
 .display.ghostMode{
     border: 2px solid #000;
 }
+
+.buttons .ghostMode{
+    color: red;
+} */
