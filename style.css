@@ -36,7 +36,7 @@ input::-webkit-outer-spin-button {
     margin: 0;
 }
 
-.display{
+#display{
     height: 80px;
     width: 100%;
     text-align: right;
@@ -48,7 +48,7 @@ input::-webkit-outer-spin-button {
     border-radius: 6px;
     background-color: var(--DisDarkBlue);
     border-bottom: 4px solid var(--DisDBS);
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 /* Special Buttons */
