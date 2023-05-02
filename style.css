@@ -25,15 +25,68 @@ body{
     width: 100%;
     max-width: 300px;
     background: var(--DarkBlue);
-    padding: 10px 20px 20px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.05);
 }
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.display{
+    height: 75px;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--DisDarkBlue);
+    border-bottom: 4px solid var(--DisDBS);
+    pointer-events: none;
+}
+
+/* Special Buttons */
+#delete{
+    background-color: #E50808 !important;
+    border-bottom: 3px solid #71320E !important;
+    color: #fff;
+}
+
+#equation{
+    background-color: var(--DisDarkBlue) !important;
+    border-bottom: 3px solid var(--DisDBS) !important;
+}
+
 .buttons{
+    margin-top: 10px;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 8px;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.buttons button{
+    cursor: pointer;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: .8rem;
+    
+}
+
+.buttons button:active{
+    transform: scale(.8);   
+}
+
+.operator{
+    background-color: var(--ODarkBlue) !important;
+    border-bottom: 3px solid #A2B99E !important;
 }
 
 :root{
@@ -46,4 +99,19 @@ body{
     --DarkYellow: #D5B942;
     --Green: #439775;
     --Dark: #1B2432;
+
+    /* Display */
+    --DisDarkBlue: #8DA9C4;
+
+    /* DisplayStroke */
+    --DisDBS: #0B2545;
+
+
+    /* Operator color */
+    --ODarkBlue: #EEF4ED;
+
+
+
+
+
 }
