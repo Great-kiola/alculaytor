@@ -55,7 +55,7 @@ input::-webkit-outer-spin-button {
 #delete{
     background-color: #E50808 !important;
     border-bottom: 3px solid #71320E !important;
-    color: #fff;
+    color: #fff !important;
 }
 
 #equation{
@@ -76,7 +76,9 @@ input::-webkit-outer-spin-button {
     padding: 12px 10px;
     border: none;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: var(--btn-background);
+    border-bottom: 3px solid var(--btnBorder-bottom);
+    color: var(--white);
     font-size: .8rem;
     
 }
@@ -88,6 +90,7 @@ input::-webkit-outer-spin-button {
 .operator{
     background-color: var(--ODarkBlue) !important;
     border-bottom: 3px solid #A2B99E !important;
+    color: var(--black) !important;
 }
 
 .modes{
@@ -99,6 +102,9 @@ input::-webkit-outer-spin-button {
 
 .allModes {
     margin: 8px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .modes .allModes button{
@@ -107,6 +113,7 @@ input::-webkit-outer-spin-button {
     border-radius: 100%;
     border: none;
     cursor: pointer;
+    color: var(--white);
 }
 
 .modes .text h1{
@@ -115,33 +122,47 @@ input::-webkit-outer-spin-button {
 
 #DarkMode{
     background-color: #1B2432;
-    color: #fff;
+}
+
+#green{
+    background-color: #439775;
+}
+
+#brown{
+    background-color: #DEA47E;
+}
+
+#blue{
+    background-color: #1E91D6;
+}
+#purple{
+    background-color: #6E44FF;
+}
+
+#yellow{
+    background-color: #D5B942;
+}
+
+#Ghost{
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.scale:active{
+    transform: scale(0.90);
 }
 
 :root{
      
-    /* Container Colors*/
     --DarkBlue: #034078;
-    --Blue: #1E91D6;
-    --Brown: #DEA47E;
-    --Purple: #6E44FF;
-    --DarkYellow: #D5B942;
-    --Green: #439775;
-
-    /* Display */
     --DisDarkBlue: #8DA9C4;
-
-    /* DisplayStroke */
     --DisDBS: #0B2545;
-
-
-    /* Operator color */
     --ODarkBlue: #EEF4ED;
-
-
-
-
-
+    --btn-background: #13315C;
+    --white: #fff;
+    --black: #000;
+    --btnBorder-bottom: #0B2545;
 }
 
 /* All modes */
@@ -151,6 +172,8 @@ input::-webkit-outer-spin-button {
     --ODarkBlue: #EEF4ED;
     --DisDarkBlue: #403F4C;
     --DisDBS: #2C2B3C;
+    --btn-background: #2C2B3C;
+    --btnBorder-bottom: #FFEED6;
 }
 
 .container.green{
@@ -158,4 +181,44 @@ input::-webkit-outer-spin-button {
     --ODarkBlue: #61D095;
     --DisDBS: #001F54;
     --DisDarkBlue: #E0BAD7;
+}
+
+.container.yellowMode{
+    --DarkBlue:#D5B942;
+    --ODarkBlue: #EDFBC1;
+    --DisDBS: #A2B99E;
+    --DisDarkBlue: #D9D375;
+}
+
+.container.purpleMode{
+    --DarkBlue: #6E44FF;
+    --ODarkBlue: #FFC2E2;
+    --DisDBS: #001F54;
+    --DisDarkBlue: #B892FF;
+}
+
+.container.brownMode{
+    --DarkBlue:#DEA47E;
+    --ODarkBlue: #9E6240;
+    --DisDBS: #914F2A;
+    --DisDarkBlue: #9E6240;
+}
+
+.container.blueMode{
+    --DarkBlue: #1E91D6;
+    --ODarkBlue: #8FC93A;
+    --DisDBS: #8FC93A;
+    --DisDarkBlue: #0072BB; 
+}
+
+.container.ghostMode{
+    --DarkBlue: transparent;
+    border: 2px solid #000;
+    --ODarkBlue: #000;
+    --DisDBS: none;
+    --DisDarkBlue: transparent;
+}
+
+.display.ghostMode{
+    border: 2px solid #000;
 }
