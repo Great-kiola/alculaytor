@@ -37,7 +37,7 @@ input::-webkit-outer-spin-button {
 }
 
 .display{
-    height: 75px;
+    height: 80px;
     width: 100%;
     text-align: right;
     padding: 10px;
@@ -61,10 +61,11 @@ input::-webkit-outer-spin-button {
 #equation{
     background-color: var(--DisDarkBlue) !important;
     border-bottom: 3px solid var(--DisDBS) !important;
+    grid-column: 3 / 5;
 }
 
 .buttons{
-    margin-top: 10px;
+    margin-top: 35px;
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(5, 1fr);
@@ -81,12 +82,31 @@ input::-webkit-outer-spin-button {
 }
 
 .buttons button:active{
-    transform: scale(.8);   
+    transform: scale(.90);   
 }
 
 .operator{
     background-color: var(--ODarkBlue) !important;
     border-bottom: 3px solid #A2B99E !important;
+}
+
+.modes{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.allModes {
+    margin: 8px;
+}
+
+.modes .allModes button{
+    padding: 5px 9px;
+}
+
+.modes .text h1{
+    font-size: .8rem;
 }
 
 :root{
