@@ -113,6 +113,11 @@ input::-webkit-outer-spin-button {
     font-size: .8rem;
 }
 
+#DarkMode{
+    background-color: #1B2432;
+    color: #fff;
+}
+
 :root{
      
     /* Container Colors*/
@@ -122,7 +127,6 @@ input::-webkit-outer-spin-button {
     --Purple: #6E44FF;
     --DarkYellow: #D5B942;
     --Green: #439775;
-    --Dark: #1B2432;
 
     /* Display */
     --DisDarkBlue: #8DA9C4;
@@ -143,8 +147,15 @@ input::-webkit-outer-spin-button {
 /* All modes */
 
 .container.darkMode{
-    --DarkBlue: var(--Dark);
+    --DarkBlue: #1B2432;
     --ODarkBlue: #EEF4ED;
     --DisDarkBlue: #403F4C;
     --DisDBS: #2C2B3C;
+}
+
+.container.green{
+    --DarkBlue: #439775;
+    --ODarkBlue: #61D095;
+    --DisDBS: #001F54;
+    --DisDarkBlue: #E0BAD7;
 }
