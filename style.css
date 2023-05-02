@@ -37,6 +37,7 @@ input::-webkit-outer-spin-button {
 }
 
 #display{
+    overflow-wrap: break-word;
     height: 80px;
     width: 100%;
     text-align: right;
@@ -48,7 +49,7 @@ input::-webkit-outer-spin-button {
     border-radius: 6px;
     background-color: var(--DisDarkBlue);
     border-bottom: 4px solid var(--DisDBS);
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 
 /* Special Buttons */
@@ -107,17 +108,26 @@ input::-webkit-outer-spin-button {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.modes .allModes button{
+.modes .allModes .scale{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     width: 35px;
     height: 35px;
     border-radius: 100%;
     border: none;
     cursor: pointer;
     color: var(--white);
+
 }
+
 
 .modes .text h1{
     font-size: .8rem;
+}
+
+#normal {
+    background-color: #dfdfdf;
 }
 
 #DarkMode{
