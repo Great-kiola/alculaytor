@@ -2,4 +2,5 @@
 
 A simple minimal calculator with 7 different colour modes to choose from
 
-
+## Screenshot
+<img src="./images/Screenshot.png" alt="Completed design" width=900 />
