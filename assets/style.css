@@ -80,7 +80,7 @@ input::-webkit-outer-spin-button {
     background-color: var(--btn-background);
     border-bottom: 3px solid var(--btnBorder-bottom);
     color: var(--white);
-    font-size: .8rem;
+    font-size: .95rem;
     
 }
 
@@ -107,6 +107,7 @@ input::-webkit-outer-spin-button {
     gap: 8px;
     grid-template-columns: repeat(4, 1fr);
 }
+
 
 .modes .allModes .scale{
     display: flex;
@@ -208,6 +209,8 @@ input::-webkit-outer-spin-button {
     --ODarkBlue: #FFC2E2;
     --DisDBS: #001F54;
     --DisDarkBlue: #B892FF;
+    --btn-background: #B892FF;
+    --btnBorder-bottom: #0B2545; 
 }
 
 .container.brownMode{
@@ -215,13 +218,19 @@ input::-webkit-outer-spin-button {
     --ODarkBlue: #9E6240;
     --DisDBS: #914F2A;
     --DisDarkBlue: #9E6240;
+    --btn-background: #9E6240;
+    --btnBorder-bottom: #0B2545; 
+    
 }
 
 .container.blueMode{
     --DarkBlue: #1E91D6;
     --ODarkBlue: #8FC93A;
     --DisDBS: #8FC93A;
-    --DisDarkBlue: #0072BB; 
+    --DisDarkBlue: #0072BB;
+    --btn-background: #0072BB;
+    --btnBorder-bottom: transparent;
+     
 }
 
 

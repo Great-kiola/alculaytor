@@ -1,8 +1,4 @@
-let DarkMode = document.getElementById('DarkMode');
 let container = document.querySelector('.container');
-let GreenMode = document.getElementById('green');
-let Normal = document.getElementById('normal');
-
 const display = document.getElementById("display");
 const buttons = document.querySelectorAll("button");
 
@@ -24,31 +20,97 @@ buttons.forEach((items) => {
     }
 })
 
+// Mode buttons
+let DarkMode = document.getElementById('DarkMode');
+let GreenMode = document.getElementById('green');
+let Normal = document.getElementById('normal');
+let yellowMode = document.getElementById('yellow');
+let brownMode = document.getElementById('brown');
+let blueMode = document.getElementById('blue');
+let purpleMode = document.getElementById('purple');
+
+
 
 // Modes
 
+Normal.addEventListener('click', normalMode); 
 DarkMode.addEventListener('click', darkMode);
 GreenMode.addEventListener('click', greenMode);
-Normal.addEventListener('click', normalMode); 
+yellowMode.addEventListener('click', yellowswitch);
+brownMode.addEventListener('click', brownswitch);
+blueMode.addEventListener('click', blueswitch);
+purpleMode.addEventListener('click', purpleswitch);
+
 
 function normalMode(e){
     e.preventDefault();
     container.classList.remove('darkMode');
     container.classList.remove('green');
+    container.classList.remove('yellowMode');
+    container.classList.remove('brownMode');
+    container.classList.remove('blueMode');
+    container.classList.remove('purpleMode');
 }
 
 
 function darkMode(e){
     e.preventDefault();
-    container.classList.remove('green');
     container.classList.add('darkMode');
+    container.classList.remove('green');
+    container.classList.remove('yellowMode');
+    container.classList.remove('brownMode');
+    container.classList.remove('blueMode');
+    container.classList.remove('purpleMode');
 
 }
 
 function greenMode(e){
     e.preventDefault();
+    container.classList.remove('darkMode');
     container.classList.add('green');
+    container.classList.remove('yellowMode');
+    container.classList.remove('brownMode');
+    container.classList.remove('blueMode');
+    container.classList.remove('purpleMode');
 }
 
+function yellowswitch(e){
+    e.preventDefault();
+    container.classList.remove('darkMode');
+    container.classList.remove('green');
+    container.classList.add('yellowMode');
+    container.classList.remove('brownMode');
+    container.classList.remove('blueMode');
+    container.classList.remove('purpleMode');
+}
 
+function brownswitch(e){
+    e.preventDefault();
+    container.classList.remove('darkMode');
+    container.classList.remove('green');
+    container.classList.remove('yellowMode');
+    container.classList.add('brownMode');
+    container.classList.remove('blueMode');
+    container.classList.remove('purpleMode');
+}
+
+function blueswitch(e){
+    e.preventDefault();
+    container.classList.remove('darkMode');
+    container.classList.remove('green');
+    container.classList.remove('yellowMode');
+    container.classList.remove('brownMode');
+    container.classList.add('blueMode');
+    container.classList.remove('purpleMode');
+}
+
+function purpleswitch(e){
+    e.preventDefault();
+    container.classList.remove('darkMode');
+    container.classList.remove('green');
+    container.classList.remove('yellowMode');
+    container.classList.remove('brownMode');
+    container.classList.remove('blueMode');
+    container.classList.add('purpleMode');
+}
 
